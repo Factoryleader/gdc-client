@@ -26,7 +26,7 @@ botocore==1.19.63
     #   boto3
     #   moto
     #   s3transfer
-certifi==2021.10.8
+certifi==2024.7.4
     # via
     #   -c requirements.txt
     #   requests
@@ -48,7 +48,7 @@ click==8.1.7
     #   flask
 coverage==5.5
     # via pytest-cov
-cryptography==2.8
+cryptography==43.0.0
     # via
     #   -c requirements.txt
     #   moto
@@ -113,7 +113,7 @@ pluggy==0.13.1
     # via pytest
 py==1.11.0
     # via pytest
-pyasn1==0.4.3
+pyasn1==0.4.8
     # via
     #   -c requirements.txt
     #   python-jose
@@ -167,7 +167,6 @@ six==1.16.0
     #   -c requirements.txt
     #   aws-sam-translator
     #   cfn-lint
-    #   cryptography
     #   docker
     #   ecdsa
     #   mock
