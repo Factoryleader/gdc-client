@@ -40,3 +40,24 @@ skip = [".gitignore", ".dockerignore"]
 
 [tool.setuptools_scm]
 local_scheme = "dirty-tag"
+
+
+[tool.pytest.ini_options]
+minversion = 6.0
+python_files = "test_*.py"
+python_functions = "test_*"
+junit_family = "xunit2"
+junit_logging = "system-out"
+console_output_style = "classic"
+log_level = "ERROR"
+log_cli = "true"
+addopts = "-rfE --color=yes -p no:ddtrace -p no:ddtrace.pytest_bdd --cov=gdc_client --cov-report term"
+norecursedirs = [
+  ".git",
+  ".tox",
+  "dist",
+  "build"
+]
+testpaths = [
+  "tests",
+]
